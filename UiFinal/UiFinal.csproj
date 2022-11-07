@@ -98,9 +98,12 @@
     <Content Include="IniciarSesion.html" />
     <Content Include="Peliculas.html" />
     <Content Include="Registrar.html" />
-    <Content Include="Src\Bg.jpg" />
     <Content Include="Src\editar %281%29.png" />
     <Content Include="Src\eliminar.png" />
+    <Content Include="Src\bg2.jpg" />
+    <Content Include="Src\BgInicio.jpg" />
+    <Content Include="Src\pexels-houses-cheung-4997750.jpg" />
+    <Content Include="Src\pexels-tima-miroshnichenko-7991225.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
