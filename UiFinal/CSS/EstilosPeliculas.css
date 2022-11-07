@@ -1,0 +1,97 @@
+﻿* {
+    
+    font-family: sans-serif;
+}
+
+body {
+    background: #222;
+}
+
+
+h1 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.Contenedor {
+    display: flex;
+    justify-content: center;
+    
+}
+
+    .Contenedor a {
+        width: 150px;
+        padding: 10px;
+        height: 30px;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: white;
+        background-color: #222;
+        border-radius: 50px;
+        border: 2px solid white;
+        margin: 0px 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+a:hover {
+    background: white;
+    color: black;
+    font-size: 20px;
+    width: 155px;
+    height: 35px;
+    font: bolder;
+}
+
+
+
+tr{
+    background: #fff;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+    .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #000000;
+    }
+
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .content-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+
+
+

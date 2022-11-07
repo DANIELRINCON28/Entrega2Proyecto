@@ -1,0 +1,56 @@
+﻿body {
+    background: #222;
+}
+
+
+h1 {
+    color: white;
+    font-size: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 250px;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+
+.Contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.Contenedor1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+    .Contenedor a {
+        width: 150px;
+        padding: 10px;
+        height: 30px;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: white;
+        background-color: #222;
+        border-radius: 50px;
+        border: 2px solid white;
+        margin: 0px 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+a:hover {
+    background: white;
+    color: black;
+    font-size: 20px;
+    width: 155px;
+    height: 35px;
+    font: bolder;
+}
