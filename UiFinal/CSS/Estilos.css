@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url(../Src/Bg.jpg);
+    background-image: url(../Src/pexels-houses-cheung-4997750.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -7,12 +7,13 @@
 
 
 h1 {
-    color: white;
+    color: #ffffff9b;
     font-size: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 300px;
-    
+    text-shadow: #222222ce 0.2em 0.2em 0.3em;
+   
 }
 
 
@@ -21,22 +22,22 @@ h1 {
     justify-content: center;
 }
 
-.Contenedor a {
-    width: 150px;
-    padding: 10px;
-    height: 30px;
-    font-size: 18px;
-    text-align: center;
-    font-family: 'Segoe UI';
-    color: white;
-    background-color: #222;
-    border-radius: 50px;
-    border: 2px solid white;
-    margin: 0px 10px;
-    cursor: pointer;
-    text-decoration: none;
-
-}
+    .Contenedor a {
+        width: 150px;
+        padding: 10px;
+        height: 30px;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: white;
+        background-color: #222222ce;
+        border-radius: 50px;
+        border: 2px solid white;
+        margin: 0px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
 
 a:hover{
     

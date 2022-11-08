@@ -1,13 +1,16 @@
 ﻿body {
-    background: #222;
+    background-image: url(../Src/pexels-tima-miroshnichenko-7991225.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 h1 {
-    color: white;
     font-size: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    text-shadow: #ffffff2e 0.2em 0.2em 0.3em;
+    color: #ffffffb1;
     margin-top: 250px;
 }
 
