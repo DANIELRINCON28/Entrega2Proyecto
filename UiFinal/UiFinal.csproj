@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarPelicula.html" />
+    <Content Include="AgregarUsuarios.html" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="CSS\EstilosIngreso.css" />
     <Content Include="CSS\EstilosPeliculas.css" />
@@ -104,6 +105,7 @@
     <Content Include="Src\BgInicio.jpg" />
     <Content Include="Src\pexels-houses-cheung-4997750.jpg" />
     <Content Include="Src\pexels-tima-miroshnichenko-7991225.jpg" />
+    <Content Include="Usuarios.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
