@@ -9,15 +9,19 @@
 <body>
 
     <div >
+        
         <h1>Bienvenido</h1>
        
     </div>
 
     <div class="Contenedor">
-        <a href="/Vistas/Registrar.html"> Registrarse </a></button>
+        <a href="/Vistas/Registrar.php"> Registrarse </a></button>
 
-        <a href="/Vistas/IniciarSesion.html"> Iniciar Sesion</a></button>
+        <a href="/Vistas/IniciarSesion.php"> Iniciar Sesion</a></button>
+        
     </div>
+
+    <a><
 
 </body>
 </html>

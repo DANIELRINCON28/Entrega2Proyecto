@@ -50,7 +50,7 @@
 
                     <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
 
-                    <button class="Btn"><a href="/Vistas/Usuarios.html"> Regresar</a></button>
+                    <button class="Btn"><a href="/Vistas/Usuarios.php"> Regresar</a></button>
                 </div>
 
             </center>

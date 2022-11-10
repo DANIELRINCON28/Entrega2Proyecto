@@ -9,7 +9,7 @@
     <form id="form1" runat="server">
         <div>
             <center>
-                <h1>Iniciar Sesion</h1>
+                <h1>Agregar Peliculas</h1>
                 <table class="Tabla">
                     <tr>
                         <td>
@@ -22,34 +22,35 @@
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblApellido">Apellido:</label>
+                            <label name="lblGenero">Genero:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtApellido" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label name="lblEmail">Email:</label>
-                        </td>
-                        <td>
-                            <input class="Input" type="text" name="txtEmail" value="" />
+                            <input class="Input" type="text" name="txtGenero" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblPreferencias">Preferencias:</label>
+                            <label name="lblDescripcion">Descripcion:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtPreferencias" value="" />
+                            <input class="Input" type="text" name="txtDescripcion" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label name="lblAutor">Autor:</label>
+                        </td>
+                        <td>
+                            <input class="Input" type="text" name="txtAutor" value="" />
                         </td>
                     </tr>
                 </table>
 
                 <div class="Contenedor">
-                    <button class="Btn"><a href="/Vistas/IngresoApp.html"> Ingresar</a></button>
+                    
+                    <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
 
-                    <button class="Btn"><a href="/Index.html"> Regresar</a></button>
+                    <button class="Btn"><a href="/Vistas/Peliculas.php"> Regresar</a></button>
                 </div>
 
             </center>

@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Iniciar Sesion</title>
+    <title>Productos</title>
     <link href="/CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <center>
-                <h1>Agregar Peliculas</h1>
+                <h1>Registrarse</h1>
                 <table class="Tabla">
                     <tr>
                         <td>
@@ -22,35 +22,26 @@
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblGenero">Genero:</label>
+                            <label name="lblApellido">Apellido:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtGenero" value="" />
+                            <input class="Input" type="text" name="txtApellido" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblDescripcion">Descripcion:</label>
+                            <label name="lblEmail">Email:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtDescripcion" value="" />
+                            <input class="Input" type="text" name="txtEmail" value="" />
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label name="lblAutor">Autor:</label>
-                        </td>
-                        <td>
-                            <input class="Input" type="text" name="txtAutor" value="" />
-                        </td>
-                    </tr>
-                </table>
+                    
+                </table> 
 
                 <div class="Contenedor">
-                    
-                    <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
-
-                    <button class="Btn"><a href="/Vistas/Peliculas.html"> Regresar</a></button>
+                    <button class="Btn"><a href="/Vistas/IngresoApp.php"> Ingresar</a></button>
+                    <button class="Btn"><a href="/Index.php"> Regresar</a></button>
                 </div>
 
             </center>

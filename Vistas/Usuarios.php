@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Peliculas</title>
+    <title>Usuarios</title>
     <link href="/CSS/EstilosPeliculas.css" rel="stylesheet" type="text/css" />
 
 
@@ -10,15 +10,15 @@
 <body>
     <div>
         <center>
-            <h1>Lista de Peliculas</h1>
+            <h1>Lista de Usuarios</h1>
             <table class="content-table">
                 <thead>
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th>Genero</th>
-                        <th>Descripcion</th>
-                        <th>Autor</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Edad</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </tr>
@@ -57,7 +57,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <<td><button><img src="/Src/editar (1).png "</button></td>
+                        <td><button><img src="/Src/editar (1).png "</button></td>
                         <td><button><img src="/Src/eliminar.png"</button></td>
                     </tr>
                     <tr>
@@ -94,9 +94,9 @@
             <br>
             <br>
             <div class="Contenedor">
-                <a href="/Vistas/AgregarPelicula.html"> Agregar Pelicula </a></button>
+                <a href="/Vistas/AgregarUsuarios.php"> Agregar usuario </a></button>
 
-                <a href="/Vistas/IngresoApp.html"> Regresar</a></button>
+                <a href="/Vistas/IngresoApp.php"> Regresar</a></button>
             </div>
 
         </center>

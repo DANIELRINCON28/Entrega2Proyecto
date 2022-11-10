@@ -14,11 +14,11 @@
 
     <div class="Contenedor">
 
-        <a class="Btn" href="/Vistas/Usuarios.html"> Usuarios</a>
+        <a class="Btn" href="/Vistas/Usuarios.php"> Usuarios</a>
 
-        <a class="Btn" href="/Vistas/Peliculas.html"> Peliculas</a>
+        <a class="Btn" href="/Vistas/Peliculas.php"> Peliculas</a>
 
-        <a class="Btn" href="/Index.html">Inicio</a>
+        <a class="Btn" href="/Index.php">Inicio</a>
     </div>
 
    
