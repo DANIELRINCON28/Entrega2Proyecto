@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Iniciar Sesion</title>
-    <link href="CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
+    <link href="/CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <center>
-                <h1>Agregar Usuarios</h1>
+                <h1>Iniciar Sesion</h1>
                 <table class="Tabla">
                     <tr>
                         <td>
@@ -38,19 +38,18 @@
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblEdad">Edad:</label>
+                            <label name="lblPreferencias">Preferencias:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtEdad" value="" />
+                            <input class="Input" type="text" name="txtPreferencias" value="" />
                         </td>
                     </tr>
                 </table>
 
                 <div class="Contenedor">
+                    <button class="Btn"><a href="/Vistas/IngresoApp.html"> Ingresar</a></button>
 
-                    <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
-
-                    <button class="Btn"><a href="Usuarios.html"> Regresar</a></button>
+                    <button class="Btn"><a href="/Index.html"> Regresar</a></button>
                 </div>
 
             </center>
