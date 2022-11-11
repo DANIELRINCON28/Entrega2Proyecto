@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Iniciar Sesion</title>
-    <link href="/CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -50,7 +50,7 @@
 
                     <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
 
-                    <button class="Btn"><a href="/Vistas/Usuarios.php"> Regresar</a></button>
+                    <button class="Btn"><a href="Vistas/Usuarios.php"> Regresar</a></button>
                 </div>
 
             </center>

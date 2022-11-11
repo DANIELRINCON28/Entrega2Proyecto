@@ -15,9 +15,9 @@
     </div>
 
     <div class="Contenedor">
-        <a href="/Vistas/Registrar.php"> Registrarse </a></button>
+        <a href="Vistas/Registrar.php"> Registrarse </a></button>
 
-        <a href="/Vistas/IniciarSesion.php"> Iniciar Sesion</a></button>
+        <a href="Vistas/IniciarSesion.php"> Iniciar Sesion</a></button>
         
     </div>
 
