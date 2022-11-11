@@ -2,12 +2,11 @@
     include("conexion.php");
     if(isset($_GET['id'])){
         $id = $_GET['id'];
-        try {
-            $query = "DELETE FROM Usuario where id = $id";
-            $result = mysqli_query($conn, $query);
-        } catch (SqlException $th) {
-            echo $th;
+        $query = "DELETE FROM Usuarios where id = $id";
+        $result = mysqli_query($conn, $query);
+        if(!$result){
+            die("fail");
         }
-        header("Location: index.php");
+        header("Location: ../Vistas/Usuarios.php");
     }
 ?>

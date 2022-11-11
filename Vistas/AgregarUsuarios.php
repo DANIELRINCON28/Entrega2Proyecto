@@ -6,7 +6,7 @@
     <link href="../CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form action="../model/GuardarUsuario.php" method="GET" id="form1">
         <div>
             <center>
                 <h1>Agregar Usuarios</h1>
@@ -17,7 +17,7 @@
                         </td>
 
                         <td>
-                            <input class="Input" type="text" name="txtNombre" value="" />
+                            <input class="Input" type="text" name="nombre" value="" />
                         </td>
                     </tr>
                     <tr>
@@ -25,33 +25,43 @@
                             <label name="lblApellido">Apellido:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtApellido" value="" />
+                            <input class="Input" type="text" name="apellido" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblEmail">Email:</label>
+                            <label name="lblEmail">Fecha de nacimiento:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtEmail" value="" />
+                            <input class="Input" type="text" name="fechaNacimiento" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblEdad">Edad:</label>
+                            <label name="lblEdad">Email:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtEdad" value="" />
+                            <input class="Input" type="email" name="email" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label name="lblEdad">Contraseña:</label>
+                        </td>
+                        <td>
+                            <input class="Input" type="password" name="contrasena" value="" />
                         </td>
                     </tr>
                 </table>
 
                 <div class="Contenedor">
 
-                    <input class="Btn" type="submit" name="btnAgregar" value="Agregar" />
+                    <input class="Btn" type="submit" name="btnGuardar" value="Agregar" />
 
-                    <button class="Btn"><a href="../Vistas/Usuarios.php"> Regresar</a></button>
+                    <a href="../Vistas/Usuarios.php" class="Btn"> Regresar</a>
+
                 </div>
+                
 
             </center>
         </div>

@@ -1,3 +1,7 @@
+<?php
+    include("../model/conexion.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,76 +21,30 @@
                         <th>Id</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Email</th>
                         <th>Edad</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                        <th>Email</th>
+                        <th>contraseña</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
+                    <?php
+                        $query = "SELECT * FROM Usuarios";
+                        $resultUsers = mysqli_query($conn, $query);
+                        while($row = mysqli_fetch_assoc($resultUsers)){?>
+                            <tr>
+                                <td><?php echo $row['id']?></td>
+                                <td><?php echo $row['nombre']?></td>
+                                <td><?php echo $row['apellido']?></td>
+                                <td><?php echo $row['fechaNacimiento']?></td>
+                                <td><?php echo $row['email']?></td>
+                                <td><?php echo $row['contraseña']?></td>
+                                <td>
+                                    <a href="../Vistas/ActualizarUsuario.php?id=<?php echo $row['id']?>"><img src="../Src/editar (1).png "></a>
+                                    <a href="../model/EliminarUsuario.php?id=<?php echo $row['id']?>"><img src="../Src/eliminar.png"></a>
+                                </td>
+                            </tr>
+                       <?php } ?>
                 </tbody>
 
 

@@ -1,17 +1,17 @@
 <?php
-    include("conexion.php");
-    if(isset($_POST['btnGuardar'])){
-        $nombre = $_POST[''];
-        $apellido = $_POST[''];
-        $fechaNacimiento = $_POST[''];
-        $email = $_POST[''];
-        $contrasena = $_POST[''];
-        try {
-            $query = "INSERT INTO Peliculas(nombre, apellido,fechaNacimiento, email, contraseña) Values('$nombre','$apellido','$fechaNacimiento','$email','$contrasena')";
-            $result = mysqli_query($conn, $query);
-        } catch (SqlException $th) {
-            echo $th;
+    include("../model/conexion.php");
+    if(isset($_GET['btnGuardar'])){
+        echo "soy";
+        $nombre = $_GET['nombre'];
+        $apellido = $_GET['apellido'];
+        $fechaNacimiento = $_GET['fechaNacimiento'];
+        $email = $_GET['email'];
+        $contrasena = $_GET['contrasena'];
+        $query = "INSERT INTO Usuarios(nombre, apellido,fechaNacimiento, email, contraseña) Values('$nombre','$apellido','$fechaNacimiento','$email','$contrasena')";
+        $result = mysqli_query($conn, $query);
+        if(!$result){
+            die("failed");
         }
-        header("Location: index.php");
-    }
+        header("Location: ../Vistas/Usuarios.php");
+   }
 ?>
