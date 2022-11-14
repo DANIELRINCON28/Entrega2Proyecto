@@ -13,27 +13,18 @@
                 <table class="Tabla">
                     <tr>
                         <td>
-                            <label name="lblnombre">Nombre:</label>
-                        </td>
-
-                        <td>
-                            <input class="Input" type="text" name="txtNombre" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label name="lblApellido">Apellido:</label>
+                            <label name="lblApellido">Email:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtApellido" value="" />
+                            <input class="Input" type="text" name="email" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblEmail">Email:</label>
+                            <label name="lblEmail">Password:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtEmail" value="" />
+                            <input class="Input" type="text" name="password" value="" />
                         </td>
                     </tr>
                    

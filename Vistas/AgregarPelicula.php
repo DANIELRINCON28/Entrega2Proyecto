@@ -6,7 +6,7 @@
     <link href="../CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form action="../model/GuardarPelicula.php" method="GET" id="form1">
         <div>
             <center>
                 <h1>Agregar Peliculas</h1>
@@ -17,7 +17,7 @@
                         </td>
 
                         <td>
-                            <input class="Input" type="text" name="txtNombre" value="" />
+                            <input class="Input" type="text" name="nombreP" value="" />
                         </td>
                     </tr>
                     <tr>
@@ -25,7 +25,7 @@
                             <label name="lblGenero">Genero:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtGenero" value="" />
+                            <input class="Input" type="text" name="generoP" value="" />
                         </td>
                     </tr>
                     <tr>
@@ -33,7 +33,7 @@
                             <label name="lblDescripcion">Descripcion:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtDescripcion" value="" />
+                            <input class="Input" type="text" name="descripcionP" value="" />
                         </td>
                     </tr>
                     <tr>
@@ -41,7 +41,7 @@
                             <label name="lblAutor">Autor:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtAutor" value="" />
+                            <input class="Input" type="text" name="autorP" value="" />
                         </td>
                     </tr>
                 </table>

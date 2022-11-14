@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Productos</title>
+    <title>Iniciar Sesion</title>
     <link href="../CSS/EstilosRegistro.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form action="../model/RegistrarHome.php" method="GET" id="form1">
         <div>
             <center>
-                <h1>Registrarse</h1>
+                <h1>Registrate</h1>
                 <table class="Tabla">
                     <tr>
                         <td>
@@ -17,7 +17,7 @@
                         </td>
 
                         <td>
-                            <input class="Input" type="text" name="txtNombre" value="" />
+                            <input class="Input" type="text" name="nombre" value="" />
                         </td>
                     </tr>
                     <tr>
@@ -25,24 +25,43 @@
                             <label name="lblApellido">Apellido:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtApellido" value="" />
+                            <input class="Input" type="text" name="apellido" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label name="lblEmail">Email:</label>
+                            <label name="lblEmail">Fecha de nacimiento:</label>
                         </td>
                         <td>
-                            <input class="Input" type="text" name="txtEmail" value="" />
+                            <input class="Input" type="text" name="fechaNacimiento" value="" />
                         </td>
                     </tr>
-                    
-                </table> 
+                    <tr>
+                        <td>
+                            <label name="lblEdad">Email:</label>
+                        </td>
+                        <td>
+                            <input class="Input" type="email" name="email" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label name="lblEdad">Contraseña:</label>
+                        </td>
+                        <td>
+                            <input class="Input" type="password" name="contrasena" value="" />
+                        </td>
+                    </tr>
+                </table>
 
                 <div class="Contenedor">
-                    <button class="Btn"><a href="../Vistas/IngresoApp.php"> Ingresar</a></button>
-                    <button class="Btn"><a href="../Index.php"> Regresar</a></button>
+
+                    <input class="Btn" type="submit" name="btnGuardar" value="Agregar" />
+
+                    <a href="../index.php" class="Btn"> Regresar</a>
+
                 </div>
+                
 
             </center>
         </div>

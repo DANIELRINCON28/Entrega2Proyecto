@@ -1,3 +1,5 @@
+<?php include("../model/conexion.php");?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,83 +21,34 @@
                         <th>Genero</th>
                         <th>Descripcion</th>
                         <th>Autor</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button><img src="../Src/editar (1).png "></button></td>
-                        <td><button><img src="../Src/eliminar.png"></button></td>
+                        <?php 
+                            $query = "SELECT * FROM Películas";
+                            $resultPeliculas = mysqli_query($conn, $query);
+                            while($row = mysqli_fetch_assoc($resultPeliculas)){?>
+                                <tr>
+                                    <td><?php echo $row['id']?></td>
+                                    <td><?php echo $row['nombre']?></td>
+                                    <td><?php echo $row['genero']?></td>
+                                    <td><?php echo $row['descripción']?></td>
+                                    <td><?php echo $row['autor']?></td>
+                                    <td>
+                                        <a href="../Vistas/ActualizarPelicula.php?id=<?php echo $row['id']?>"><img src="../Src/editar (1).png "></a>
+                                        <a href="../model/EliminarPelicula.php?id=<?php echo $row['id']?>"><img src="../Src/eliminar.png"></a>
+                                    </td>
+                                </tr>
+                            <?php }?>
+                        
                     </tr>
                 </tbody>
-
-
             </table>
             <br>
             <br>
             <div class="Contenedor">
                 <a href="../Vistas/AgregarPelicula.php"> Agregar Pelicula </a></button>
-
                 <a href="../Vistas/IngresoApp.php"> Regresar</a></button>
             </div>
 
